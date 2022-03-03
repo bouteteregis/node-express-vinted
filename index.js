@@ -40,6 +40,6 @@ app.use(function (err, req, res, next) {
 });
 
 const server = app.listen(process.env.PORT, () => {
-  console.log("Server started");
+  console.log("Server started  PORT=" + process.env.PORT);
 });
 server.timeout = Number(process.env.SERVER_TIMEOUT) || 1000000;
